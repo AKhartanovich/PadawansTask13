@@ -30,7 +30,11 @@ namespace PadawansTask13
 
         public string GetInfo
         {
-            get { return "Фамилия: {Employee.Surname}, Возраст: {Employee.Age}";  }
+            get { return "Surname: {Employee.Surname}, Age: {Employee.Age}"; }
+        }
+        public string GetEmployeeInfo()
+        {
+            return "Surname: " + _Surname + ", Age: " + _Age;
         }
     }
 }
